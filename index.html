@@ -144,19 +144,23 @@
                   <div class="card pt-5">
                     <div class="card-body bg-dark ">
                       <h5 class="card-title fw-bold text-white pb-5">Budget</h5>
-                       <span class="text-white fw-semibold"> Per Player:</span>
-                      <input type="text"> 
+                       <span  class="text-white fw-semibold"> Per Player:</span>
+                      <input id="player-field" type="text"> 
+                      <div><button id="player-expense" class="btn btn-primary border-start m-start p-2">Calculate Total</button></div>
+                      <div>
+                        <P class="text-white fw-semibold">player expenses : <span id="playerTotal-expense"></span></P>
+                      </div>
                        <div class="pt-3">
                         <span class="text-white fw-semibold pt-3 mt-3"> Manager :</span>
-                      <input type="text">
+                      <input id="manager-field" type="text">
                        </div>
                        <div class="pt-3">
                         <span class="text-white fw-semibold pt-3 mt-3 px-2"> Coach  :</span>
-                      <input type="text">
+                      <input id="coach-field" type="text">
 
                        </div>
                        <div class=" pt-3">
-                        <button class=" mx-4 p-2"> Calculate Total</button>
+                       <button id="calculate-field" class="btn btn-primary">Calculate Total</button>
 
                        </div>
                        <div class="pt-3">
@@ -174,5 +178,6 @@
        
     </div>
     <script src="js/script.js"></script>
+    <script src="js/utilities.js"></script>
 </body>
 </html>

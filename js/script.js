@@ -38,3 +38,22 @@ function addToPlayerList(element){
     document.getElementById('player-cart').innerText = playerArray.length;
     display(playerArray);
 }
+
+// Budget Calculation part start
+document.getElementById('player-expense').addEventListener('click',function(){
+    const playerNumber = 5;
+    const playerExpencesValue = getInputFieldValuebyId('player-field');
+    const playerTotalExpences = playerExpencesValue * playerNumber;
+    const playerTotalExpenseFieldValue = getTextElementValueById('playerTotal-expense');
+    setTextElementValueById('playerTotal-expense',playerTotalExpences);
+})
+document.getElementById('calculate-field').addEventListener('click',function(){
+   const playerNumber = 5;
+    const playerExpenseValue = getInputFieldValuebyId('player-field');
+   const managerExpenseValue = getInputFieldValuebyId('manager-field');
+   const coachExpenseValue = getInputFieldValuebyId('coach-field');
+
+   const totalExpenseValue =( playerExpenseValue * playerNumber ) + managerExpenseValue + coachExpenseValue;
+
+})
+
