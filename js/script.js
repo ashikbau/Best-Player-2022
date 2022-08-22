@@ -46,6 +46,9 @@ document.getElementById('player-expense').addEventListener('click',function(){
     const playerTotalExpences = playerExpencesValue * playerNumber;
     const playerTotalExpenseFieldValue = getTextElementValueById('playerTotal-expense');
     setTextElementValueById('playerTotal-expense',playerTotalExpences);
+    if(playerExpencesValue.value ===isNaN){
+        alert ('enter a valid number');
+    }
 })
 document.getElementById('calculate-field').addEventListener('click',function(){
    const playerNumber = 5;
@@ -54,6 +57,8 @@ document.getElementById('calculate-field').addEventListener('click',function(){
    const coachExpenseValue = getInputFieldValuebyId('coach-field');
 
    const totalExpenseValue =( playerExpenseValue * playerNumber ) + managerExpenseValue + coachExpenseValue;
+   const finalTotalValue = getTextElementValueById('final-total');
+   setTextElementValueById('final-total',totalExpenseValue);
 
 })
 
