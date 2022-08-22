@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Player of the Planet</title>
+    
+    <!-- link to bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="container">
+<!-- heading section -->
+        <section class="pt-5">
+          <div class="d-flex justify-content-around">
+            
+            <h1 class="text-warning fw-bold">Chosse the Best Player</h1>
+            <h1> on the Earth </h1>
+            <p>As we count down to the start of the global showpiece in Qatar on 20 November, FIFA+ is showcasing 100 of the greatest moments in FIFA World Cup history. And also choose top five player of the moment. </p>
+            
+            
+             
+        
+        <div>
+            <img src="images/Banner Image.png" alt="">
+        </div>
+    </div>
+  
+   
+    
+   
+   </section>
+   <!-- list of the Player Section -->
+
+        <section>
+            <div class="row">
+                <div class="col-8">
+                  <div class="row">
+                    <div class="col-4 ">
+                      <div class="card" style="width: 18rem;">
+                        <img  src="images/aguiro3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Aguira</h5>
+                          
+                          <a href="#" class="btn btn-primary" onclick="addToPlayerList(this)">Select</a>
+                        </div>
+                      </div>
+                      <div class="card" style="width: 18rem;">
+                        <img src="images/messi.jpg" class="card-img-top h-25" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Messi</h5>
+                         
+                          <a href="#" class="btn btn-primary" onclick="addToPlayerList(this)">Select</a>
+                        </div>
+                      </div>
+                        
+    
+                    </div>
+                    <div class="col-4">
+                      <div class="card" style="width: 18rem;">
+                        <img src="images/eriksen.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Eriksen</h5>
+                          
+                          <a href="#" class="btn btn-primary" onclick="addToPlayerList(this)">Select</a>
+                        </div>
+                      </div>
+                      <div class="card" style="width: 18rem;">
+                        <img src="images/ronaldo1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Ronaldo</h5>
+                          
+                          <a href="#" class="btn btn-primary" onclick="addToPlayerList(this)">Select</a>
+                        </div>
+                      </div>
+                        
+    
+                    </div>
+                    <div class=" col-4">
+                      <div class="card" style="width: 18rem;">
+                        <img src="images/neimar.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Neimar</h5>
+                         
+                          <a href="#" class="btn btn-primary" onclick="addToPlayerList(this)">Select</a>
+                        </div>
+                      </div>
+                      <div class="card" style="width: 18rem;">
+                        <img src="images/mbappe.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Mbappe</h5>
+                          
+                          <a href="#" class="btn btn-primary" onclick="addToPlayerList(this)">Select</a>
+                        </div>
+                      </div>
+                        
+    
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4 g-5 pb-2 ">
+                  <div class="card">
+                    <div class="card-body bg-dark ">
+                      <h5 class="card-title text-bg-danger">Selected - V</h5>
+                     <!-- <ol id="player-list" class="list-group px-4">
+                      <li class="fw-semibold text-white"> </li>
+                     <li class="fw-semibold text-white"></li>
+                     <li class="fw-semibold text-white"></li>
+                     <li class="fw-semibold text-white"></li>
+                     <li class="fw-semibold text-white"></li>
+                     </ol> -->
+
+                     <!-- card table part start-->
+                     <div class="overflow-x-auto">
+                      <table class="table table-zebra w-100 text-white">
+                        <!-- head -->
+                        <thead>
+                          <tr>
+                            <th> </th>
+                            
+                            <th>Player Name</th>
+                          </tr>
+                        </thead>
+                        <tbody id="player-cart">
+                          <tr>
+                              <!-- <th>1</th>
+                              <td>Name</td>
+                              <td></td> -->
+                            </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+
+
+                     <!-- cart table part end -->
+
+                      
+                    </div>
+                  </div>
+                  <div class="card pt-5">
+                    <div class="card-body bg-dark ">
+                      <h5 class="card-title fw-bold text-white pb-5">Budget</h5>
+                       <span class="text-white fw-semibold"> Per Player:</span>
+                      <input type="text"> 
+                       <div class="pt-3">
+                        <span class="text-white fw-semibold pt-3 mt-3"> Manager :</span>
+                      <input type="text">
+                       </div>
+                       <div class="pt-3">
+                        <span class="text-white fw-semibold pt-3 mt-3 px-2"> Coach  :</span>
+                      <input type="text">
+
+                       </div>
+                       <div class=" pt-3">
+                        <button class=" mx-4 p-2"> Calculate Total</button>
+
+                       </div>
+                       <div class="pt-3">
+                        <span class="text-white fw-semibold pt-3 mt-3"> Total :</span>
+                      
+                       </div>
+                      
+                      
+                    </div>
+                  </div>
+    
+                </div>
+              </div>
+        </section>
+       
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
