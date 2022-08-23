@@ -14,7 +14,7 @@ function display(playerProduct){
             const tr = document.createElement('tr');
             tr.innerHTML =`
             <th>${i+1}</th>
-            <td>${player}>             
+            <td>${player}             
             </td>`;
     
     
