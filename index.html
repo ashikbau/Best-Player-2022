@@ -20,7 +20,7 @@
       <div class="container hero">
          <div class="row">
              <div class="col-12 col-lg-6 col-xl-5 offset-xl-1">
-                 <h1>Choose the best player of  the year </h1>
+                 <h1 class="text-white fw-bold">Choose the best player of  the year </h1>
                  <p>The Best FIFA Football Awards™, which will be held for the sixth time on 17 January 2022,  annually honour the most outstanding members of the world’s most popular sport.</p><button class="btn btn-light btn-lg action-button" type="button">Learn More</button></div>
              <div class="pt-3 mt-3  col-md-5 col-lg-5 offset-lg-1 offset-xl-0 d-none d-lg-block phone-holder">
                  <img src="images/Banner Image.png" alt="" srcset="">
@@ -44,7 +44,7 @@
                         <div class="card-body">
                           <h5 class="card-title">Aguira</h5>
                           
-                          <a href="#" class="btn btn-primary" onclick="addToPlayerList(this)">Select</a>
+                          <button id="btn1" href="#" class="btn btn-primary"  onclick="addToPlayerList(this,this.id)">Select</button>
                         </div>
                       </div>
                       <div class="card" style="width: 18rem;">
@@ -52,7 +52,7 @@
                         <div class="card-body">
                           <h5 class="card-title">Messi</h5>
                          
-                          <a href="#" class="btn btn-primary" onclick="addToPlayerList(this)">Select</a>
+                          <button id="btn2" href="#" class="btn btn-primary"  onclick="addToPlayerList(this,this.id)">Select</button>
                         </div>
                       </div>
                         
@@ -64,7 +64,7 @@
                         <div class="card-body">
                           <h5 class="card-title">Eriksen</h5>
                           
-                          <a href="#" class="btn btn-primary" onclick="addToPlayerList(this)">Select</a>
+                          <button id="btn3" href="#" class="btn btn-primary" onclick="addToPlayerList(this,this.id)">Select</button>
                         </div>
                       </div>
                       <div class="card" style="width: 18rem;">
@@ -72,7 +72,7 @@
                         <div class="card-body">
                           <h5 class="card-title">Ronaldo</h5>
                           
-                          <a href="#" class="btn btn-primary" onclick="addToPlayerList(this)">Select</a>
+                          <button id="btn4" href="#" class="btn btn-primary" onclick="addToPlayerList(this,this.id)">Select</button>
                         </div>
                       </div>
                         
@@ -84,7 +84,7 @@
                         <div class="card-body">
                           <h5 class="card-title">Neimar</h5>
                          
-                          <a href="#" class="btn btn-primary" onclick="addToPlayerList(this)">Select</a>
+                          <button id="btn5" href="#" class="btn btn-primary" onclick="addToPlayerList(this,this.id)">Select</button>
                         </div>
                       </div>
                       <div class="card" style="width: 18rem;">
@@ -92,7 +92,7 @@
                         <div class="card-body">
                           <h5 class="card-title">Mbappe</h5>
                           
-                          <a href="#" class="btn btn-primary" onclick="addToPlayerList(this)">Select</a>
+                          <button id="btn6" href="#" class="btn btn-primary" onclick="addToPlayerList(this,this.id)">Select</button>
                         </div>
                       </div>
                         
@@ -100,18 +100,15 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-4 g-5 pb-2 ">
+                <!-- cart table part start -->
+                <div class="col-4 g-5 pb-2 h-100">
                   <div class="card">
                     <div class="card-body bg-dark ">
-                      <h5 class="card-title text-bg-danger">Selected - V</h5>
-                     <!-- <ol id="player-list" class="list-group px-4">
-                      <li class="fw-semibold text-white"> </li>
-                     <li class="fw-semibold text-white"></li>
-                     <li class="fw-semibold text-white"></li>
-                     <li class="fw-semibold text-white"></li>
-                     <li class="fw-semibold text-white"></li>
-                     </ol> -->
-
+                      <!-- <h5 class="card-title text-bg-danger">Selected - V</h5> -->
+                     
+                      <div>
+                      <p  class="text-4xl text-center text-white">Total added Products  <span id="total-products" class="text-blue-500">0</span>
+                      </p>
                      <!-- card table part start-->
                      <div class="overflow-x-auto">
                       <table class="table table-zebra w-100 text-white">
@@ -124,6 +121,8 @@
                           </tr>
                         </thead>
                         <tbody id="player-cart">
+                          
+                          
                           <tr>
                               <!-- <th>1</th>
                               <td>Name</td>
